@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary: #0090f0;
+  --text-white: #fff;
+  --bg-white: #fff;
+
+  --padding: 15px;
+  --shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --toolbar-container-height-padding: 64px;
+}
+
+html, body, #app{
+  height: 100vh;
+}
+

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">capacitorjs plugins</string>
+    <string name="title_activity_main">capacitorjs plugins</string>
+    <string name="package_name">com.capacitorjs.plugins.br</string>
+    <string name="custom_url_scheme">com.capacitorjs.plugins.br</string>
+</resources>
