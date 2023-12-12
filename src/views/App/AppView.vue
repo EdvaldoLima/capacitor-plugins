@@ -11,7 +11,7 @@ const serInfo = async () => {
 }
 </script>
 <template>
-  <ToolBar showBack />
+  <VToolBar showBack />
   <VContainer>
     <div class="card" v-show="showResult">
       <div class="card__title">result</div>

@@ -29,7 +29,7 @@ const addItem = () => {
 const items = computed(() => actionSheetOptions.options)
 </script>
 <template>
-  <ToolBar showBack />
+  <VToolBar showBack />
   <VContainer class="flex flex-col justify-items-center gap-3">
     <input class="input input-bordered input-primary w-full" type="text" v-model="actionSheetOptions.title" />
 

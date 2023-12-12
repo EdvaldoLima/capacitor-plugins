@@ -5,7 +5,7 @@ import { apis } from '@/constants/enums'
 const apisList = computed(() => apis)
 </script>
 <template>
-  <ToolBar> CapacitorJs Plugins </ToolBar>
+  <VToolBar> CapacitorJs Plugins </VToolBar>
   <VContainer>
     <VCard class="m-3" v-for="(api, idx) in apisList" :key="idx">
       <template #title>{{ api.title }}</template>

@@ -14,7 +14,7 @@ const openChromeBrowser = async () => {
 </script>
 <template>
   <div class="layout">
-    <ToolBar showBack />
+    <VToolBar showBack />
     <VContainer>
       <strong>Can Open:</strong> {{ canOpen }} <br />
       <strong>Open Result:</strong> {{ openResult }} <br />
