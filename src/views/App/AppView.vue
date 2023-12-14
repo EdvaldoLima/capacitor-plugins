@@ -1,25 +1,64 @@
 <script setup>
-import { reactive, ref } from 'vue'
-import { exitApp, getInfo } from '@/services'
+import { reactive, onMounted } from 'vue'
+import {
+  exitApp,
+  getInfo,
+  getState,
+  getLaunchUrl,
+  minimizeApp,
+  removeAllListeners,
+  onAppStateChange
+} from '@/services'
 
-const info = reactive({})
-const showResult = ref(false)
+const actionsResult = reactive({})
+const eventsResult = reactive({})
 
-const serInfo = async () => {
-  info.value = await getInfo()
-  showResult.value = true
+const setInfo = async () => {
+  actionsResult.value = await getInfo()
 }
+
+const setState = async () => {
+  actionsResult.value = await getState()
+}
+
+const setLaunchUrl = async () => {
+  actionsResult.value = await getLaunchUrl()
+}
+
+onMounted(async () => {
+  onAppStateChange((data) => {
+    eventsResult.value = data
+  })
+})
 </script>
 <template>
-  <VToolBar showBack />
-  <VContainer>
-    <div class="card" v-show="showResult">
-      <div class="card__title">result</div>
-      <div class="card__text">
-        {{ info?.value }}
-      </div>
-    </div>
-    <button class="btn" @click="exitApp">exit app</button>
-    <button class="btn" @click="serInfo">get app info</button>
+  <VToolBar show-back />
+  <VContainer class="flex flex-col gap-3">
+    <VCard>
+      <template #body>
+        <strong>Actions Result:</strong>
+        {{ actionsResult?.value }} <br>
+        <strong>Events Result:</strong>
+        {{ eventsResult.value }}
+      </template>
+    </VCard>
+    <VBtn @click="setInfo">
+      get app info
+    </VBtn>
+    <VBtn @click="setState">
+      get app state
+    </VBtn>
+    <VBtn @click="setLaunchUrl">
+      get app launch url
+    </VBtn>
+    <VBtn @click="minimizeApp">
+      minimize app
+    </VBtn>
+    <VBtn @click="exitApp">
+      exit app
+    </VBtn>
+    <VBtn @click="removeAllListeners">
+      remove all listeners
+    </VBtn>
   </VContainer>
 </template>

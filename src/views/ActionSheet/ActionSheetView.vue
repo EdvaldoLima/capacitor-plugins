@@ -29,19 +29,30 @@ const addItem = () => {
 const items = computed(() => actionSheetOptions.options)
 </script>
 <template>
-  <VToolBar showBack />
+  <VToolBar show-back />
   <VContainer class="flex flex-col justify-items-center gap-3">
-    <input class="input input-bordered input-primary w-full" type="text" v-model="actionSheetOptions.title" />
+    <input
+      v-model="actionSheetOptions.title"
+      class="input input-bordered input-primary w-full"
+      type="text"
+    >
 
     <h3>Items:</h3>
     <ul>
-      <li v-for="(item, idx) in items" :key="idx">
+      <li
+        v-for="(item, idx) in items"
+        :key="idx"
+      >
         {{ idx }} - {{ item.title }}
       </li>
     </ul>
     Action Sheet Index Selected: {{ actionSelected?.index }}
 
-    <button class="btn" @click="openActionSheet">open</button>
-    <button class="btn" @click="addItem">add item</button>
+    <VBtn @click="openActionSheet">
+      open
+    </VBtn>
+    <VBtn @click="addItem">
+      add item
+    </VBtn>
   </VContainer>
 </template>

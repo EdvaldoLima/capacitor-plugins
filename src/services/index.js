@@ -1,3 +1,16 @@
 export { showActions, ActionSheetButtonStyle } from './actionSheet'
 export { canOpenUrl, openUrl } from './appLauncher'
-export { exitApp, getInfo } from './app'
+export {
+  exitApp,
+  getInfo,
+  getState,
+  getLaunchUrl,
+  minimizeApp,
+  onAppStateChange,
+  onPause,
+  onResume,
+  onAppUrlOpen,
+  onAppRestoredResult,
+  onBackButton,
+  removeAllListeners
+} from './app'

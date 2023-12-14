@@ -7,8 +7,14 @@ const apisList = computed(() => apis)
 <template>
   <VToolBar> CapacitorJs Plugins </VToolBar>
   <VContainer>
-    <VCard class="m-3" v-for="(api, idx) in apisList" :key="idx">
-      <template #title>{{ api.title }}</template>
+    <VCard
+      v-for="(api, idx) in apisList"
+      :key="idx"
+      class="m-3"
+    >
+      <template #title>
+        {{ api.title }}
+      </template>
       <template #body>
         <p>{{ api.description }}</p>
         <p>
@@ -16,8 +22,19 @@ const apisList = computed(() => apis)
         </p>
       </template>
       <template #actions>
-        <a :href="api.doc" target="_blank" class="btn btn-primary">doc</a>
-        <router-link :to="api.view" class="btn btn-primary">see</router-link>
+        <VBtn
+          :href="api.doc"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          doc
+        </VBtn>
+        <VBtn
+          :to="api.view"
+          class="btn btn-primary"
+        >
+          see
+        </VBtn>
       </template>
     </VCard>
   </VContainer>
