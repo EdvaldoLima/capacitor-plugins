@@ -19,5 +19,12 @@ export const apis = [
     doc: 'https://capacitorjs.com/docs/apis/app',
     view: '/app',
     plugin: '@capacitor/app'
+  },
+  {
+    title: 'Browser',
+    description: 'The Browser API provides the ability to open an in-app browser and subscribe to browser events.',
+    doc: 'https://capacitorjs.com/docs/apis/browser',
+    view: '/browser',
+    plugin: '@capacitor/browser'
   }
 ]

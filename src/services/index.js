@@ -14,3 +14,4 @@ export {
   onBackButton,
   removeAllListeners
 } from './app'
+export { openBrowserUrl } from './browser'
