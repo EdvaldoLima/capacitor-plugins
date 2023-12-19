@@ -12,7 +12,9 @@
     "open:android": "vite build && cap sync && cap open android",
     "android": "vite build && cap sync && cap run android",
     "prepare": "husky install",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run dev"
   },
   "dependencies": {
     "@capacitor/action-sheet": "^5.0.6",
@@ -20,6 +22,7 @@
     "@capacitor/app": "^5.0.6",
     "@capacitor/app-launcher": "^5.0.6",
     "@capacitor/browser": "^5.1.0",
+    "@capacitor/camera": "^5.0.8",
     "@capacitor/core": "^5.5.1",
     "@capacitor/ios": "^5.5.1",
     "@ionic/pwa-elements": "^3.2.2",

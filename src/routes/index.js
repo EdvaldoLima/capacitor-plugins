@@ -3,6 +3,7 @@ import ActionSheet from '@/views/ActionSheet/ActionSheetView.vue'
 import AppLauncher from '@/views/AppLauncher/AppLauncherView.vue'
 import App from '@/views/App/AppView.vue'
 import Browser from '@/views/Browser/BrowserView.vue'
+import Camera from '@/views/Camera/CameraView.vue'
 
 export const routes = [
   {
@@ -29,5 +30,10 @@ export const routes = [
     path: '/browser',
     name: 'browser',
     component: Browser
+  },
+  {
+    path: '/camera',
+    name: 'camera',
+    component: Camera
   }
 ]
