@@ -33,5 +33,12 @@ export const apis = [
     doc: 'https://capacitorjs.com/docs/apis/camera',
     view: '/camera',
     plugin: '@capacitor/camera'
+  },
+  {
+    title: 'Clipboard',
+    description: 'The Clipboard API enables copy and pasting to/from the system clipboard.',
+    doc: 'https://capacitorjs.com/docs/apis/clipboard',
+    view: '/clipboard',
+    plugin: '@capacitor/clipboard'
   }
 ]

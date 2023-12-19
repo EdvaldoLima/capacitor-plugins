@@ -21,3 +21,4 @@ export {
   requestPermissions,
   CameraResultType
 } from './camera'
+export { writeClipboard, readClipboard } from './clipboard'
