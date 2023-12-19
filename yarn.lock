@@ -997,6 +997,11 @@
   resolved "https://registry.yarnpkg.com/@capacitor/browser/-/browser-5.1.0.tgz#2389638c09716d815765f9622b5f3c71e21d7b6f"
   integrity sha512-7togqchk2Tvq4SmLaWhcrd4x48ES/GEZsceM+29aun7WhxQEVcDU0cJsVdSU2LNFwNhWgPV2GW90etVd1B3OdQ==
 
+"@capacitor/camera@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@capacitor/camera/-/camera-5.0.8.tgz#e427cf8d189619d4c3ee1b491e8cf3d2469972ad"
+  integrity sha512-V9kuBJV4s2AEFMiUiB5vpPD1qdfKRq/iFQ9euntuUYP+bOHQwGnwuERsQd48PoLUPV1up/08J8tJwGxMkDvPTQ==
+
 "@capacitor/cli@^5.5.1":
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-5.6.0.tgz#83fb1303ae1bd977622a4f55d3e1cec96378c475"

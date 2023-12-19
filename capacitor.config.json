@@ -4,8 +4,6 @@
   "webDir": "dist",
   "bundledWebRuntime": true,
   "server": {
-    "androidScheme": "https",
-    "url": "http://192.168.18.32:5173/",
-    "cleartext": true
+    "androidScheme": "https"
   }
 }

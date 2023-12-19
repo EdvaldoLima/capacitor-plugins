@@ -26,5 +26,12 @@ export const apis = [
     doc: 'https://capacitorjs.com/docs/apis/browser',
     view: '/browser',
     plugin: '@capacitor/browser'
+  },
+  {
+    title: 'Camera',
+    description: 'The Camera API provides the ability to take a photo with the camera or choose an existing one from the photo album.',
+    doc: 'https://capacitorjs.com/docs/apis/camera',
+    view: '/camera',
+    plugin: '@capacitor/camera'
   }
 ]

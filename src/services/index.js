@@ -15,3 +15,9 @@ export {
   removeAllListeners
 } from './app'
 export { openBrowserUrl } from './browser'
+export {
+  getPhoto,
+  pickImages,
+  requestPermissions,
+  CameraResultType
+} from './camera'
