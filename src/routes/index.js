@@ -5,6 +5,7 @@ import App from '@/views/App/AppView.vue'
 import Browser from '@/views/Browser/BrowserView.vue'
 import Camera from '@/views/Camera/CameraView.vue'
 import Clipboard from '@/views/Clipboard/ClipboardView.vue'
+import Device from '@/views/Device/DeviceView.vue'
 
 export const routes = [
   {
@@ -41,5 +42,10 @@ export const routes = [
     path: '/clipboard',
     name: 'clipboard',
     component: Clipboard
+  },
+  {
+    path: '/device',
+    name: 'device',
+    component: Device
   }
 ]

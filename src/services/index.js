@@ -22,3 +22,9 @@ export {
   CameraResultType
 } from './camera'
 export { writeClipboard, readClipboard } from './clipboard'
+export {
+  getInfoDevice,
+  getBatteryInfo,
+  getLanguageTag,
+  getLanguageCode
+} from './device'
