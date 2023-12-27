@@ -28,3 +28,8 @@ export {
   getLanguageTag,
   getLanguageCode
 } from './device'
+export {
+  dialogAlert,
+  dialogPrompt,
+  dialogConfirm
+} from './dialog'
