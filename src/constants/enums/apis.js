@@ -47,5 +47,12 @@ export const apis = [
     doc: 'https://capacitorjs.com/docs/apis/device',
     view: '/device',
     plugin: '@capacitor/device'
+  },
+  {
+    title: 'Dialog',
+    description: 'The Dialog API provides methods for triggering native dialog windows for alerts, confirmations, and input prompts.',
+    doc: 'https://capacitorjs.com/docs/apis/dialog',
+    view: '/dialog',
+    plugin: '@capacitor/dialog'
   }
 ]

@@ -6,6 +6,7 @@ import Browser from '@/views/Browser/BrowserView.vue'
 import Camera from '@/views/Camera/CameraView.vue'
 import Clipboard from '@/views/Clipboard/ClipboardView.vue'
 import Device from '@/views/Device/DeviceView.vue'
+import Dialog from '@/views/Dialog/DialogView.vue'
 
 export const routes = [
   {
@@ -47,5 +48,10 @@ export const routes = [
     path: '/device',
     name: 'device',
     component: Device
+  },
+  {
+    path: '/dialog',
+    name: 'dialog',
+    component: Dialog
   }
 ]
